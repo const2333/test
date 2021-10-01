@@ -1,0 +1,3 @@
+﻿  case_conversion.c
+E:\code warehouse\test\case _conversion\case _conversion\case_conversion.c(27): warning C4716: “casecon”: 必须返回一个值
+  case _conversion.vcxproj -> E:\code warehouse\test\case _conversion\Debug\case _conversion.exe
