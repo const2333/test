@@ -1,0 +1,4 @@
+﻿  my_qsort.c
+E:\code warehouse\test\my_qsort\my_qsort\my_qsort.c(56,10): warning C4098: “test1”:“void”函数返回值
+E:\code warehouse\test\my_qsort\my_qsort\my_qsort.c(66,15): warning C4013: “strcmp”未定义；假设外部返回 int
+  my_qsort.vcxproj -> E:\code warehouse\test\my_qsort\Debug\my_qsort.exe
