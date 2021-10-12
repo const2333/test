@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_DEPRECATE 1
 #include <stdio.h>
+#include <string.h>
 
 struct in {
 
@@ -53,7 +54,7 @@ void test1()
 	{
 		printf("%d ", arr[i]);
 	}
-	return 0;
+	printf("\n");
 }
 
 int a_cmp_by_age(const void* p1, const void* p2)
@@ -69,14 +70,21 @@ int a_cmp_by_name(const void* p1, const void* p2)
 void test2()
 {
 	struct in a[] = { {"zhangsan",45},{"lisi",25},{"wangwu",30} };
+	int sz = sizeof(a) / sizeof(a[0]);
 	//my_qsort(a, sizeof(a) / sizeof(a[0]), sizeof(a[0]), a_cmp_by_age);
-	my_qsort(a, sizeof(a) / sizeof(a[0]), sizeof(a[0]), a_cmp_by_name);
+	my_qsort(a, sz, sizeof(a[0]), a_cmp_by_name);
+	for (int i = 0; i < sz; i++)
+	{
+		printf("%s %d\n", a[i].name, a[i].age);
+		;
+	}
+
 }
 
 int main()
 {
 	
-	//test1();
+	test1();
 	test2();
 
 	return 0;
